@@ -1,1 +1,1 @@
-"C:\Windows\Microsoft.NET\Framework\v4.0.30319\InstallUtil.exe" "%~dp0\..\ServerMonitor.exe"
+sc create "SSH Service" binpath="%~dp0\..\SshService.exe"
