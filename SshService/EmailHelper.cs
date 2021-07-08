@@ -16,7 +16,7 @@
         }
         public static void Send(string subject, string body, string[] toEmails, string[] ccEmails, string[] bccEmails)
         {
-            // Do what you gotta do to send emails!
+            //TODO: Implement email functionality.
         }
     }
 }

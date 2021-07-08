@@ -62,8 +62,14 @@ namespace SshService
             try
             {
                 _Client = new SshClient(connInfo);
-                _Client.KeepAliveInterval = new TimeSpan(0, 0, 5);
-                _Client.ConnectionInfo.Timeout = new TimeSpan(0, 0, 20);
+
+                // Could be configurable.
+                int keepAliveIntervalSeconds = 5;
+                _Client.KeepAliveInterval = new TimeSpan(0, 0, keepAliveIntervalSeconds);
+
+                // Could be configurable.
+                int connectionTimeoutSeconds = 20;
+                _Client.ConnectionInfo.Timeout = new TimeSpan(0, 0, connectionTimeoutSeconds);
                 _Client.Connect();
 
                 if(_Client.IsConnected)
