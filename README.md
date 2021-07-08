@@ -13,13 +13,13 @@ Please feel free to use this tool, and expand on it where necessary.
 NOTE: Email functionality purposely left out as devs can add their own email logic as they see fit.
 
 # Configuration
-host: The server you're connecting to.
-user: The username you're using to connect.
-pass: The password you're using to connect.
-port: The port number you're using to connect to the host.
-privateKeyFile: The path to the key file if you're using one.
-forwardedPort: The forwarded port number.
-forwardedAddress: The forwarded IP address.
-pollIntervalSeconds: The interval (in seconds) at which the service checks the SSH connection.
-toEmails: The list of email addesses that will receive notifications when the services starts or ends, or when the SSH connection opens or closes.
+host: The server you're connecting to.<br/>
+user: The username you're using to connect.<br/>
+pass: The password you're using to connect.<br/>
+port: The port number you're using to connect to the host.<br/>
+privateKeyFile: The path to the key file if you're using one.<br/>
+forwardedPort: The forwarded port number.<br/>
+forwardedAddress: The forwarded IP address.<br/>
+pollIntervalSeconds: The interval (in seconds) at which the service checks the SSH connection.<br/>
+toEmails: The list of email addesses that will receive notifications when the services starts or ends, or when the SSH connection opens or closes.<br/>
 tryToRepoenLimit: Number of times the service will attempt to reopen the SSH connection if it drops.
